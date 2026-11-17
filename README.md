@@ -1,0 +1,54 @@
+# Antigravity Workshop Starter
+
+> [!IMPORTANT]
+> **Unofficial Community / Workshop Resource** — Accurate as of 11/17/2026.
+> This project is not provided by Google and does not come with any support or warranties. This repository is an unofficial, personal workshop companion and is not an official Google product or supported Google Cloud release.
+
+**What this is**
+- A ready-to-clone starter repository for 2-hour Antigravity developer workshop sprints.
+- Pre-configured with a lean starter `AGENTS.md` and the `workshop-sprint-coach` skill (`.agents/skills/workshop-sprint-coach/`), which interviews your team with 4 quick multiple-choice questions and matches you to a scoped experiment, copy-paste prompt starter, or codelab.
+
+**Why this exists**
+- Workshop teams arrive with different backgrounds—some are opening an agentic harness for the first time, while others already have production repos and want to test MCP servers, `AGENTS.md` hierarchies, or spec-driven workflows.
+- Cloning this repo gives your team a working `AGENTS.md` + interactive coach in under 30 seconds.
+
+**What this is not**
+- not an official Google-maintained skills catalog (see [google-gemini/gemini-skills](https://github.com/google-gemini/gemini-skills) for official Google skills)
+- not a production framework, SDK, or grading harness
+- not a requirement to ship finished code—workshop sprints optimize for learning, friction discovery, and reusable patterns
+
+**How it works**
+- `AGENTS.md`: lean `<30`-line starter rules file loaded automatically when you open the repo
+- `.agents/skills/workshop-sprint-coach/`: workspace skill symlink pointing to `skills/workshop-sprint-coach/`
+- `skills/workshop-sprint-coach/SKILL.md`: 4-step interactive coaching workflow (interview -> track match -> prompt & resource handoff -> optional `SPEC.md` / `AGENTS.md` scaffold)
+- `skills/workshop-sprint-coach/references/tracks.md`: 12 scoped 2-hour sprint tracks (including official Google Codelabs) with full copy-paste prompts organized by difficulty and category
+- `skills/workshop-sprint-coach/references/resources.md`: curated index of official Google Codelabs, official Google Skills & OSS repos, and public workshop demo repos
+
+---
+
+## Quick Start for Workshop Attendees
+
+### Option A: Clone the Starter Repo (Recommended)
+
+```bash
+git clone https://github.com/alanblythe/antigravity-workshop-starter
+cd antigravity-workshop-starter
+```
+
+Open the folder in Antigravity (IDE or CLI) and paste:
+
+```text
+Run workshop-sprint-coach to interview our team and match us to a 2-hour sprint track.
+```
+
+### Option B: Add the Skill to an Existing Repo (Single-Prompt Install)
+
+Paste this prompt into Antigravity inside your existing project directory:
+
+```text
+Clone https://github.com/alanblythe/antigravity-workshop-starter into /tmp/antigravity-workshop-starter, copy skills/workshop-sprint-coach into .agents/skills/workshop-sprint-coach/ in this workspace, and then run the workshop-sprint-coach skill to interview our team and help us pick a 2-hour sprint track.
+```
+
+## License
+
+Apache 2.0 (see individual linked repositories for their respective licenses).
