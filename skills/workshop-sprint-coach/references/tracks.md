@@ -39,7 +39,7 @@ Our team is new to Antigravity and doesn't have a fixed project yet. We have ~2 
 - **Teaches:** `.agents/skills/<name>/SKILL.md` discovery, adaptation, and invocation
 
 ```text
-Browse the official Google Gemini Agent Skills repository at https://github.com/google-gemini/gemini-skills (or clone it to `/tmp/gemini-skills` to inspect the available skills).
+Browse the official Google Agent Skills catalog at https://github.com/google/skills (broad Google Cloud, Developers, and Analytics skills) and/or https://github.com/google-gemini/gemini-skills (Gemini API/SDK skills).
 1. Summarize the available skills and recommend the best 1–2 skills for our team's workflow today.
 2. Install the skill we choose into this workspace under `.agents/skills/<skill-name>/` (preserving `SKILL.md` and any bundled `scripts/` or `references/`).
 3. Adapt any project-specific paths or rules if needed, then immediately invoke/test the newly installed skill against a real file or change in this repository and show us what it caught or produced.
@@ -168,7 +168,7 @@ Build a clean, self-contained HTML presentation in `./team-readout-deck` using *
 
 ```text
 We want to work through an official Google Developer Codelab from `references/resources.md` at our own pace, using Antigravity as a live study buddy.
-1. Based on our experience level, pick the best starting codelab (L100: Getting Started with Google Antigravity or Building AI Agents with ADK; L200: Spec-Driven Development with Antigravity CLI `sdd-agy-cli`, Build & Deploy to GCP, or ADK Memory & MCP) and share the direct URL.
+1. Based on our experience level, pick the best starting codelab (L100: Getting Started with Google Antigravity; L100/L200: Building with Google Antigravity; L200: Spec-Driven Development with Antigravity CLI `sdd-agy-cli`, Build & Deploy to GCP, Building AI Agents with ADK, or ADK Memory & MCP) and share the direct URL.
 2. Walk us through prerequisites and explain what each step or command is doing as we go.
 3. Help us debug any environment/auth hiccup and capture 3 concrete takeaways for our afternoon team share-out.
 ```
