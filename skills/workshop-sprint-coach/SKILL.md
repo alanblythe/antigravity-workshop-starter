@@ -10,7 +10,7 @@ Help an individual attendee go from a blank slate to hands-on learning in under 
 ## Step 1: Fast-Pick or 3-Question Check-In
 
 - **If the attendee already named a track, number, or topic** (e.g., `"Track 1"`, `"Camera BOM"`, `"google/skills"`, `"demo10"`, `"codelab"`): skip the questions and jump straight to **Step 3**.
-- **Otherwise**, ask these 3 short multiple-choice questions in one concise message:
+- **Otherwise**, use the interactive **`ask_question` tool** (multiple-choice option picker UI; fall back to numbered text only if `ask_question` is unavailable) to ask these 3 questions together:
 
 1. **Your experience with Antigravity / agentic harnesses:**
    - A) Brand new (first time using an agentic IDE or CLI)
@@ -36,7 +36,7 @@ Help an individual attendee go from a blank slate to hands-on learning in under 
    - Track number, title, and difficulty
    - What you'll learn (e.g., `/plan`, `/grill-me`, `/browser`, `AGENTS.md`, `.agents/skills/`, MCP, or subagents)
    - Any extra GCP IAM note if a cloud-deploy codelab is included
-3. Ask them to reply with a **track number** (or ask to see the full 13-track menu).
+3. Immediately call **`ask_question`** (the interactive multiple-choice option picker UI) with the 2–3 recommended tracks plus `"Show all 13 tracks"` as options so the attendee can click/select with one tap instead of typing.
 
 ## Step 3: Execute Immediately (No Second Copy-Paste)
 
