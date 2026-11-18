@@ -20,7 +20,7 @@
 **How it works**
 - `AGENTS.md`: lean `<30`-line starter rules file loaded automatically when you open the repo
 - `.agents/skills/workshop-sprint-coach/`: workspace skill symlink pointing to `skills/workshop-sprint-coach/`
-- `skills/workshop-sprint-coach/SKILL.md`: 4-step interactive coaching workflow (interview -> track match -> prompt & resource handoff -> optional `SPEC.md` / `AGENTS.md` scaffold)
+- `skills/workshop-sprint-coach/SKILL.md`: interactive setup & links concierge (`ask_question` check-in -> track match -> clones demo / shares codelab or skill links / hands back control so you drive)
 - `skills/workshop-sprint-coach/references/tracks.md`: 13 scoped 2-hour sprint tracks (including official Google Codelabs and pre-seeded workbench demos) with full copy-paste prompts organized by difficulty and category
 - `skills/workshop-sprint-coach/references/resources.md`: curated index of official Google Codelabs, official Google Skills & OSS repos, and public workshop demo repos
 
