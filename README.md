@@ -46,7 +46,7 @@ Run workshop-sprint-coach to interview our team and match us to a 2-hour sprint 
 Paste this prompt into Antigravity inside your existing project directory:
 
 ```text
-Clone https://github.com/alanblythe/antigravity-workshop-starter into /tmp/antigravity-workshop-starter, copy skills/workshop-sprint-coach into .agents/skills/workshop-sprint-coach/ in this workspace, and then run the workshop-sprint-coach skill to interview our team and help us pick a 2-hour sprint track.
+Install the workshop-sprint-coach skill from https://github.com/alanblythe/antigravity-workshop-starter into this workspace and run it to interview our team and kick off our 2-hour sprint.
 ```
 
 ## License
