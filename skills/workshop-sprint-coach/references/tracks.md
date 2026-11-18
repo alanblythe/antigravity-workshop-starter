@@ -168,7 +168,7 @@ Build a clean, self-contained HTML presentation in `./team-readout-deck` using *
 
 ```text
 We want to work through an official Google Developer Codelab from `references/resources.md` at our own pace, using Antigravity as a live study buddy.
-1. Based on our experience level, pick the best starting codelab (L100: Getting Started with Google Antigravity; L100/L200: Building with Google Antigravity; L200: Spec-Driven Development with Antigravity CLI `sdd-agy-cli`, Build & Deploy to GCP, Building AI Agents with ADK, or ADK Memory & MCP) and share the direct URL.
+1. Based on our experience level, pick the best starting codelab (L100: Getting Started with Google Antigravity; L100/L200: Building with Google Antigravity; L200: Spec-Driven Development with Antigravity CLI `sdd-agy-cli`, Build & Deploy to GCP, Building AI Agents with ADK, or ADK Memory & MCP), share the direct URL, and flag if it requires extra GCP IAM permissions (Cloud Run, BigQuery, or Agent Runtime) beyond baseline Vertex AI access.
 2. Walk us through prerequisites and explain what each step or command is doing as we go.
 3. Help us debug any environment/auth hiccup and capture 3 concrete takeaways for our afternoon team share-out.
 ```

@@ -2,15 +2,22 @@
 
 ## Official Google Codelabs & Docs
 
+### Local / Baseline Project Friendly (No Extra GCP IAM Needed)
 - **Getting Started with Google Antigravity (L100):** https://codelabs.developers.google.com/getting-started-google-antigravity
 - **Building with Google Antigravity (L100/L200):** https://codelabs.developers.google.com/building-with-google-antigravity
-- **Build and Deploy to Google Cloud with Antigravity (L200):** https://codelabs.developers.google.com/build-and-deploy-gcp-with-antigravity
 - **Spec-Driven Development with Antigravity CLI (L200):** https://codelabs.developers.google.com/sdd-agy-cli
-- **Building AI Agents with ADK — The Foundation (L200):** https://codelabs.developers.google.com/codelabs/adk-foundation
-- **Deploy an ADK Agent to Agent Runtime Using Agents CLI (L200):** https://codelabs.developers.google.com/codelabs/agents-cli-agent-runtime
-- **ADK Agentic Patterns with Memory & MCP (L200/L300):** https://codelabs.developers.google.com/codelabs/adk-memory-mcp
-- **Deploying Secure Remote MCP Servers on Cloud Run (L200):** https://codelabs.developers.google.com/codelabs/cloud-run-deploy-mcp-server
-- **MCP Toolbox for BigQuery Dataset (L200):** https://codelabs.developers.google.com/mcp-toolbox-bigquery-dataset
+- **Building AI Agents with ADK — The Foundation (L200):** https://codelabs.developers.google.com/codelabs/adk-foundation *(runs locally via `adk web` / terminal)*
+- **ADK Agentic Patterns with Memory & MCP (L200/L300):** https://codelabs.developers.google.com/codelabs/adk-memory-mcp *(local agent & MCP)*
+
+### Requires Additional GCP Project Permissions (Cloud Run / BigQuery / Agent Runtime)
+> [!NOTE]
+> These codelabs deploy cloud resources or query GCP datasets—check with your workshop GCP admin before starting if your sandbox project only has Vertex AI enabled.
+- **Build and Deploy to Google Cloud with Antigravity (L200):** https://codelabs.developers.google.com/build-and-deploy-gcp-with-antigravity *(requires Cloud Run & Artifact Registry)*
+- **Deploy an ADK Agent to Agent Runtime Using Agents CLI (L200):** https://codelabs.developers.google.com/codelabs/agents-cli-agent-runtime *(requires Agent Engine / Runtime IAM)*
+- **Deploying Secure Remote MCP Servers on Cloud Run (L200):** https://codelabs.developers.google.com/codelabs/cloud-run-deploy-mcp-server *(requires Cloud Run & IAM)*
+- **MCP Toolbox for BigQuery Dataset (L200):** https://codelabs.developers.google.com/mcp-toolbox-bigquery-dataset *(requires BigQuery dataset & IAM)*
+
+### Official Docs
 - **Official Antigravity Docs:** https://antigravity.google/docs
 - **Antigravity CLI Overview:** https://antigravity.google/docs/cli/overview
 
