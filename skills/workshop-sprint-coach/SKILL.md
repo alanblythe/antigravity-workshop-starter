@@ -1,60 +1,50 @@
 ---
 name: workshop-sprint-coach
-description: Interactive workshop sprint coach that interviews a team with 4 quick multiple-choice questions and matches them to a scoped 2-hour Antigravity experiment, prompt starter, or codelab.
+description: Self-service interactive workshop launcher that matches an individual attendee to a scoped Antigravity experiment, pre-seeded demo, official skill, or Google Codelab and immediately starts executing it—no second copy-paste required.
 ---
 
 # Workshop Sprint Coach
 
-Guide a workshop team from a blank slate to a scoped, high-signal 2-hour Antigravity sprint in 4 steps. Keep interactions fast, practical, and focused on learning over code volume.
+Help an individual attendee go from a blank slate to hands-on learning in under 60 seconds. Keep interactions fast, practical, and focused on discovery over code volume.
 
-## Step 1: Interview the Team (4 Quick Questions)
+## Step 1: Fast-Pick or 3-Question Check-In
 
-Ask the user these 4 short multiple-choice questions in a single concise message (do not dump tracks yet):
+- **If the attendee already named a track, number, or topic** (e.g., `"Track 1"`, `"Camera BOM"`, `"google/skills"`, `"demo10"`, `"codelab"`): skip the questions and jump straight to **Step 3**.
+- **Otherwise**, ask these 3 short multiple-choice questions in one concise message:
 
-1. **Experience level with Antigravity / agentic harnesses:**
-   - A) Brand new (first time using an agentic IDE/CLI)
+1. **Your experience with Antigravity / agentic harnesses:**
+   - A) Brand new (first time using an agentic IDE or CLI)
    - B) Tried basic chat/autocomplete, new to `AGENTS.md`, Skills, and MCP
    - C) Regular user (comfortable with `/plan`, rules, and multi-file edits)
-   - D) Advanced (looking for spec-driven subagents, hooks, or architectural audits)
-2. **Primary role or domain:**
+   - D) Advanced (ready for spec-driven subagents, hooks, or architectural audits)
+2. **Your primary focus:**
    - A) Application / Full-Stack / Frontend Engineering
    - B) Platform, DevOps, SRE, or Infrastructure
    - C) Data, AI/ML, or Backend Services
-   - D) Engineering Leadership, CoE, Architecture, or Mixed Team
-3. **Preferred 2-hour sprint goal:**
-   - A) **Build App** — build a working UI/app or API from a spec
-   - B) **Build MCP** — connect an agent to local domain data/tools via MCP
-   - C) **Audit Repo** — analyze an existing codebase for patterns, vertical slicing, or security
-   - D) **Codify Skill** — package team standards, `AGENTS.md` rules, or deterministic gates
-   - E) **Explore & Learn** — guided ideation, official skills, or pre-seeded workbench demos (`antigravity-advanced-workshop-demos`)
-   - F) **Guided Codelab** — follow an official step-by-step Google Developer Codelab with Antigravity as your study buddy
-4. **Team size & split:**
-   - A) Solo or pair (1–2 people, single thread)
-   - B) Small squad (3–5 people, can split into parallel roles or tracks)
-   - C) Larger group (6+ people, want sub-teams comparing approaches)
+   - D) Architecture, CoE, Leadership, or Exploring Ideas
+3. **What do you want to try right now?**
+   - A) **Build App** — one-shot Camera BOM viewer, spec-driven feature, or `reveal.js` HTML deck
+   - B) **Build MCP** — connect Antigravity to local domain data via `FastMCP`
+   - C) **Audit or Harden a Repo** — vertical-slicing audit, `AGENTS.md` hierarchy, or negative security tests
+   - D) **Skills & Pre-Seeded Demos** — install an official `google/skills` package or run a ready-to-go workbench demo (`demo1`–`demo10`)
+   - E) **Guided Codelab** — work step-by-step through an official Google Developer Codelab with Antigravity coaching
 
-## Step 2: Match & Recommend Top 2–3 Tracks
+## Step 2: Recommend Top 2–3 Options
 
-1. Read `references/tracks.md` (and `references/resources.md` if they want codelabs or demo repos).
-2. Match their answers against the **Track Selection Matrix** in `references/tracks.md`.
-3. Present the **top 2–3 matching tracks** with:
-   - Track title, difficulty, and estimated time
-   - Why it fits their role, experience, and team split
-   - Which Antigravity features it teaches (e.g., `/plan`, `/grill-me`, `/browser`, `AGENTS.md`, `.agents/skills/`, MCP, or subagents)
-4. Ask them to pick one track (or ask to see another category).
+1. Read `references/tracks.md` (and `references/resources.md` for codelabs/repos).
+2. Present the **top 2–3 matching tracks** from the **Track Selection Matrix** with:
+   - Track number, title, and difficulty
+   - What you'll learn (e.g., `/plan`, `/grill-me`, `/browser`, `AGENTS.md`, `.agents/skills/`, MCP, or subagents)
+   - Any extra GCP IAM note if a cloud-deploy codelab is included
+3. Ask them to reply with a **track number** (or ask to see the full 13-track menu).
 
-## Step 3: Deliver the Full Prompt & Execution Guide
+## Step 3: Execute Immediately (No Second Copy-Paste)
 
-Once the team chooses a track:
-1. Output the **full copy-pasteable starter prompt** from `references/tracks.md` verbatim in a fenced `text` block.
-2. Provide a brief **2-hour pacing plan** (e.g., 15m setup/scope -> 75m build/experiment -> 15m verify -> 15m `/learn` synthesis).
-3. Include **2–4 relevant links** from `references/resources.md` (codelabs, official Google skills, or public demo repos) tailored to their track.
-4. If their team has 3+ people, suggest a clean role split (e.g., Scope Lead, Builder(s), Adversarial Verifier / Note-Taker).
+Once the attendee picks a track:
+1. Read that track's full instructions in `references/tracks.md` and **start executing it immediately in this same session**—do **NOT** dump a prompt and ask them to copy-paste it into a new chat.
+2. Explain briefly what you are doing as you go (e.g., cloning the demo, installing the skill, asking `/grill-me` questions for `SPEC.md`, or walking through Step 1 of the codelab).
+3. Include **2–3 relevant links** from `references/resources.md` for reference.
 
-## Step 4: Offer Starter Scaffolding & Ground Rules
+## Step 4: Capture Takeaways Before Share-Out
 
-After presenting the track, offer to immediately scaffold **one** lightweight starter file if useful:
-- A lean `<80`-line `AGENTS.md` with their build/test commands and invariants, **or**
-- A starter `docs/specs/001-feature-spec.md` (`SPEC.md`) template for spec-driven tracks.
-
-Close with a quick reminder: **learning, friction logs, and reusable takeaways matter more than finished code**—and suggest running **Track 10 (Synthesis & `/learn`)** in the final 15 minutes before share-out.
+Remind the attendee that **learning, friction discoveries, and reusable patterns matter more than finished code**—and offer to run **Track 10 (Synthesis & `/learn`)** in the final 15 minutes to summarize their top 3 takeaways for their group's `2:00 PM` share-out.

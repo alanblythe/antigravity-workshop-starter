@@ -35,10 +35,10 @@ git clone https://github.com/alanblythe/antigravity-workshop-starter
 cd antigravity-workshop-starter
 ```
 
-Open the folder in Antigravity (IDE or CLI) and paste:
+Open the folder in Antigravity (IDE, App, or CLI) and type:
 
 ```text
-Run workshop-sprint-coach to interview our team and match us to a 2-hour sprint track.
+Run workshop-sprint-coach so I can pick what to explore and start right away.
 ```
 
 ### Option B: Add the Skill to an Existing Repo (Single-Prompt Install)
@@ -46,7 +46,7 @@ Run workshop-sprint-coach to interview our team and match us to a 2-hour sprint 
 Paste this prompt into Antigravity inside your existing project directory:
 
 ```text
-Install the workshop-sprint-coach skill from https://github.com/alanblythe/antigravity-workshop-starter into this workspace and run it to interview our team and kick off our 2-hour sprint.
+Install workshop-sprint-coach from https://github.com/alanblythe/antigravity-workshop-starter and run it so I can pick what to explore and start right away.
 ```
 
 ## License
