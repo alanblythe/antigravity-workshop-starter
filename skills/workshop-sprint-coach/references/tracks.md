@@ -1,189 +1,131 @@
-# Workshop Sprint Tracks & Prompt Starters
+# Workshop Sprint Tracks — Links & Guidance
 
-Ten scoped 2-hour sprint tracks organized by difficulty and category. Use the selection matrix below to match a team's answers to their top 2–3 options.
+Thirteen scoped 90–120 minute learning paths. Share only the **links and brief guidance** below—never generate starter prompts or execute setup commands.
 
 ## Track Selection Matrix
 
-| Track | Title | Difficulty | Goal Category | Best For |
+| Track | Title | Difficulty | Category | Best For |
 | :--- | :--- | :--- | :--- | :--- |
-| **Track 3** | Zero-Idea / First-Time Team Kickoff | Beginner | Explore & Learn | Brand-new teams with no fixed project yet |
-| **Track 2** | Install & Apply an Official Google Skill | Beginner -> Intermediate | Explore & Learn / Codify Skill | Learning portable `SKILL.md` workflows fast |
-| **Track 8** | Modular `AGENTS.md` + Scoped `.agents/rules/` | Beginner -> Intermediate | Codify Skill | Teams with an existing repo & context bloat |
-| **Track 1** | One-Shot App Build: Camera BOM List Viewer | Beginner -> Intermediate | Build App | Fast, zero-bundler UI + `/browser` verification |
-| **Track 4** | Build a Custom Domain MCP Server (`FastMCP`) | Intermediate | Build MCP | Backend/platform teams connecting domain data |
-| **Track 6** | Codify Repo Standards into `SKILL.md` + Script Gate | Intermediate | Codify Skill | Teams wanting deterministic PR/lint gates |
-| **Track 5** | Repo Patterns & Vertical Slicing Audit | Intermediate -> Advanced | Audit Repo | Existing codebases needing `AGENT_READINESS.md` |
-| **Track 7** | Spec-Driven Build (Elephant-Goldfish Pattern) | Intermediate -> Advanced | Build App | Practicing `SPEC.md` -> `/clear` -> Subagents |
-| **Track 9** | Harden App with Lifecycle Hooks & Negative Tests | Intermediate -> Advanced | Audit Repo / Build App | Security guardrails, SQLi/path-traversal tests |
-| **Track 10** | Synthesis & `/learn` Share-Out Prep | All Levels | Wrap-Up (Last 15m) | Turning sprint friction into reusable team rules |
-| **Track 11** | Interactive HTML Deck (`reveal.js`) | Beginner -> Intermediate | Build App / Share-Out | Building a live browser-based team readout deck |
-| **Track 12** | Guided Official Google Codelab | Beginner -> Intermediate | Guided Codelab | Step-by-step official Codelab with Antigravity coaching |
-| **Track 13** | Guided Workbench Demo (`antigravity-advanced-workshop-demos`) | Beginner -> Intermediate | Explore & Learn / Build App | Pre-seeded local demos (`demo1`, `demo6`, `demo7`, `demo9`, `demo10`) |
+| **Track 3** | First-Time Guided Exploration | Beginner | Explore & Learn | Brand-new teams with no fixed project yet |
+| **Track 2** | Explore Official Google Skills | Beginner -> Intermediate | Explore & Learn / Skills | Learning portable `SKILL.md` workflows fast |
+| **Track 8** | Modular `AGENTS.md` + Scoped Rules | Beginner -> Intermediate | Context Hygiene | Teams with an existing repo & context bloat |
+| **Track 1** | Zero-Build Web App (Camera BOM Viewer) | Beginner -> Intermediate | Build App | Fast, zero-bundler HTML/JS UI + `/browser` testing |
+| **Track 4** | Custom Domain MCP Server (`FastMCP`) | Intermediate | Build MCP | Backend/platform teams connecting domain data |
+| **Track 6** | Repo Standards `SKILL.md` + Script Gate | Intermediate | Codify Skill | Deterministic PR/lint checks via scripts |
+| **Track 5** | Repo Vertical Slicing & Readiness Audit | Intermediate -> Advanced | Audit Repo | Existing codebases needing `AGENT_READINESS.md` |
+| **Track 7** | Spec-Driven Build (Elephant-Goldfish) | Intermediate -> Advanced | Build App | Practicing `SPEC.md` -> `/clear` -> Subagents |
+| **Track 9** | Lifecycle Hooks & Negative Security Tests | Intermediate -> Advanced | Audit / Security | Security guardrails, SQLi/path-traversal tests |
+| **Track 10** | Synthesis & `/learn` Share-Out Prep | All Levels | Wrap-Up (Last 15m) | Turning sprint friction into 3 takeaways |
+| **Track 11** | Interactive HTML Deck (`reveal.js`) | Beginner -> Intermediate | Build App / Share-Out | Zero-build browser readout slides |
+| **Track 12** | Official Google Codelab | Beginner -> Intermediate | Guided Codelab | Step-by-step official Google Developer Codelab |
+| **Track 13** | Pre-Seeded Workbench Demo | Beginner -> Intermediate | Pre-Seeded Demo | Local-only resettable demos (`demo1`–`demo10`) |
 
 ---
 
-## Category A: Explore, Ideate & Context Hygiene
+## Track Guidance
 
-### Track 3 — Zero-Idea / First-Time Team Kickoff: Use Antigravity to Ideate & Learn
-- **Difficulty:** Beginner
-- **Teaches:** `/plan`, `/grill-me`, Skills, `AGENTS.md`, MCP, and guided exploration
+### Track 1 — Zero-Build Web App (Camera BOM Viewer)
+- **Difficulty:** Beginner -> Intermediate · **Teaches:** `/plan`, zero-bundler HTML/CSS/JS, `python3 -m unittest`, `/browser` verification
+- **Links:** [Antigravity Docs](https://antigravity.google/docs) · [App Creator Templates](https://github.com/alanblythe/antigravity-2.0-application-creator)
+- **Guidance:**
+  - Open a clean local folder and use `/plan` to scope a 3-level Camera BOM tree (data, rollup math, light/dark CSS, `localStorage`).
+  - Keep it zero-build (vanilla HTML5/CSS3/JS served with `python3 -m http.server`) and pair it with `unittest` for cost/lead-time math.
+  - Verify the rendered UI and console (`0` errors) using `/browser`.
 
-```text
-Our team is new to Antigravity and doesn't have a fixed project yet. We have ~2 hours for a hands-on sprint where learning and practical ideas matter more than finished code.
-1. Interview us with 4 short multiple-choice questions about our day-to-day role, biggest recurring engineering/ops bottleneck, preferred tech stack, and whether we want to explore coding, documentation, repo analysis, or automation.
-2. Based on our answers, propose 3 scoped 90-minute experiments (one safe/easy, one medium, one stretch) and explain which Antigravity features each one teaches (`/plan`, `/grill-me`, Skills, `AGENTS.md`, MCP, or subagents).
-3. Once we pick one, walk us through it step-by-step and explain what the harness is doing as we go.
-```
+### Track 2 — Explore & Apply Official Google Skills
+- **Difficulty:** Beginner -> Intermediate · **Teaches:** `.agents/skills/<name>/SKILL.md` discovery and invocation
+- **Links:** [google/skills](https://github.com/google/skills) · [google-gemini/gemini-skills](https://github.com/google-gemini/gemini-skills) · [Knowledge Catalog Plugin](https://github.com/gemini-cli-extensions/knowledge-catalog)
+- **Guidance:**
+  - Browse the two official catalogs above and pick 1 skill that matches your team's stack (Cloud, Developers, Analytics, or Gemini SDK).
+  - Copy or install its `SKILL.md` (and any `scripts/` or `references/`) into `.agents/skills/<skill-name>/`.
+  - Test it on a real file in your workspace and note what worked vs. what needed local adaptation.
 
-### Track 2 — Install & Apply a Skill from the Official Google Skills Library
-- **Difficulty:** Beginner -> Intermediate
-- **Teaches:** `.agents/skills/<name>/SKILL.md` discovery, adaptation, and invocation
+### Track 3 — First-Time Guided Exploration
+- **Difficulty:** Beginner · **Teaches:** `/plan`, `/grill-me`, `AGENTS.md`, Skills, and MCP basics
+- **Links:** [Getting Started Codelab](https://codelabs.developers.google.com/getting-started-google-antigravity) · [Antigravity Docs](https://antigravity.google/docs) · [Workshop Starter Repo](https://github.com/alanblythe/antigravity-workshop-starter)
+- **Guidance:**
+  - Start with the Getting Started Codelab or pick a small pain point from your day-to-day work.
+  - Practice `/grill-me` before coding so the agent asks clarifying questions first, then review `/plan` before approving edits.
+  - Focus on observing how the harness reads files, runs checks, and recovers from errors.
 
-```text
-Browse the official Google Agent Skills catalog at https://github.com/google/skills (broad Google Cloud, Developers, and Analytics skills) and/or https://github.com/google-gemini/gemini-skills (Gemini API/SDK skills).
-1. Summarize the available skills and recommend the best 1–2 skills for our team's workflow today.
-2. Install the skill we choose into this workspace under `.agents/skills/<skill-name>/` (preserving `SKILL.md` and any bundled `scripts/` or `references/`).
-3. Adapt any project-specific paths or rules if needed, then immediately invoke/test the newly installed skill against a real file or change in this repository and show us what it caught or produced.
-```
+### Track 4 — Custom Domain MCP Server (`FastMCP` / Python)
+- **Difficulty:** Intermediate · **Teaches:** `mcp` / `FastMCP` (`stdio`), `.mcp.json` registration, negative input validation
+- **Links:** [MCP Toolbox for Databases](https://github.com/googleapis/mcp-toolbox) · [ADK Memory & MCP Codelab](https://codelabs.developers.google.com/codelabs/adk-memory-mcp)
+- **Guidance:**
+  - Pick a small domain fixture (JSON or SQLite, e.g., warranty lookup, parts stock, or firmware matrix) and expose 2–3 read-only tools via `FastMCP`.
+  - Register it in `.mcp.json` and include a negative test showing malformed inputs fail cleanly.
+  - Run a live query through Antigravity to verify it uses your MCP tool output rather than guessing.
 
-### Track 8 — Design a Modular `AGENTS.md` + Scoped `.agents/rules/` Hierarchy
-- **Difficulty:** Beginner -> Intermediate
-- **Teaches:** Standing context budgets (`<20k` tokens), root `AGENTS.md` (`<80` lines), and scoped rules
+### Track 5 — Repo Vertical Slicing & Readiness Audit
+- **Difficulty:** Intermediate -> Advanced · **Teaches:** Read-only architectural analysis, context locality, `AGENTS.md` synthesis
+- **Links:** [Antigravity Docs](https://antigravity.google/docs) · [Elephant-Goldfish Model](https://egm.dev)
+- **Guidance:**
+  - Point Antigravity at an existing repo in read-only mode to map directory boundaries (vertical feature slices vs. tangled horizontal layers).
+  - Capture inconsistent conventions and tribal knowledge in an `AGENT_READINESS.md` note.
+  - Distill only the real build/test commands and universal invariants into a `<80`-line `AGENTS.md`.
 
-```text
-Audit our workspace and help us set up clean, non-bloated hierarchical context without exceeding the 20,000-token standing rules budget:
-1. Draft a concise root `AGENTS.md` (<80 lines) containing only repo-wide build/test commands, architecture map, and universal invariants.
-2. Identify 2–3 domain-specific or subdirectory-specific rules (e.g., SQL/DB safety, frontend accessibility, API contract checks) and place them either in scoped `.agents/rules/*.md` (with `model_decision` or glob triggers) or a nested `subdir/AGENTS.md`.
-3. Verify with an experiment that an agent working in the subdirectory picks up the nested/scoped rule without loading unrelated rules from other directories.
-```
+### Track 6 — Repo Standards `SKILL.md` + Deterministic Script Gate
+- **Difficulty:** Intermediate · **Teaches:** Moving deterministic checks out of prose into executable `scripts/`
+- **Links:** [google/skills](https://github.com/google/skills) · [Antigravity Docs](https://antigravity.google/docs)
+- **Guidance:**
+  - Turn a recurring PR checklist or lint rule into `.agents/skills/<name>/SKILL.md` (`<120` lines).
+  - Put deterministic checks (missing tests, banned patterns, naming) into a Python/shell script in `scripts/` that exits non-zero on failure.
+  - Test both a failing sample and a clean sample to confirm deterministic pass/fail behavior.
 
----
+### Track 7 — Spec-Driven Build (Elephant-Goldfish Pattern)
+- **Difficulty:** Intermediate -> Advanced · **Teaches:** `/grill-me` requirements discovery, `SPEC.md`, `/clear`, isolated review
+- **Links:** [Elephant-Goldfish Model](https://github.com/google/elephant-goldfish-model) · [egm.dev](https://egm.dev) · [SDD with Antigravity CLI Codelab](https://codelabs.developers.google.com/sdd-agy-cli)
+- **Guidance:**
+  - Use `/grill-me` first to lock down requirements and edge cases into a `SPEC.md` without writing code.
+  - Run `/clear` (or use a fresh subagent) so implementation starts with clean context reading only `SPEC.md`.
+  - Use a separate review pass comparing `git diff` strictly against `SPEC.md`.
 
-## Category B: Build Apps & Domain MCP Servers
+### Track 8 — Modular `AGENTS.md` + Scoped `.agents/rules/`
+- **Difficulty:** Beginner -> Intermediate · **Teaches:** Standing context budgets (`<20k` tokens), root `AGENTS.md` (`<80` lines), scoped rules
+- **Links:** [Antigravity Docs](https://antigravity.google/docs) · [Workshop Starter Repo](https://github.com/alanblythe/antigravity-workshop-starter)
+- **Guidance:**
+  - Keep root `AGENTS.md` strictly to repo-wide build/test commands and universal invariants.
+  - Move domain-specific rules (SQL, UI, APIs) into `.agents/rules/*.md` with glob or `model_decision` triggers, or nested `subdir/AGENTS.md`.
+  - Verify that a task in one subdirectory loads only its relevant rules without bloating unrelated tasks.
 
-### Track 1 — One-Shot App Build: Camera BOM (Bill of Materials) List Viewer
-- **Difficulty:** Beginner -> Intermediate
-- **Teaches:** Zero-build HTML/CSS/JS scaffolding, `unittest` verification, and `/browser` UI testing
+### Track 9 — Lifecycle Hooks & Negative Security Tests
+- **Difficulty:** Intermediate -> Advanced · **Teaches:** Negative security testing (SQLi, path traversal) and deterministic hook gates
+- **Links:** [Antigravity Docs](https://antigravity.google/docs) · [Advanced Workshop Demos (`demo3`, `demo9`)](https://github.com/alanblythe/antigravity-advanced-workshop-demos)
+- **Guidance:**
+  - Take a small API or DB script and add negative tests for SQL injection, path traversal, and unvalidated inputs.
+  - Wire a verification script or pre-commit/hook gate that blocks bad changes automatically.
+  - Confirm a seeded bad edit is caught deterministically before verifying the clean fix.
 
-```text
-Build a self-contained, zero-bundler Camera BOM (Bill of Materials) List Viewer web app in a new directory `./camera-bom-viewer` using vanilla HTML5, CSS3, and ES5/ES6 JavaScript (no external CDNs, frameworks, or npm build steps) plus a tiny Python 3 stdlib server (`python3 -m http.server 8000` or `file://` compatible via `<script src="./app.js">`).
+### Track 10 — Synthesis & `/learn` Share-Out Prep (Final 15m)
+- **Difficulty:** All Levels · **Teaches:** Friction capture, 5-minute share-out synthesis, `/learn`-style rule extraction
+- **Links:** [Workshop Starter Repo](https://github.com/alanblythe/antigravity-workshop-starter)
+- **Guidance:**
+  - Summarize 3 takeaways for the `2:00 PM` share-out: what worked, where you hit friction, and what surprised you.
+  - Identify 1 pilot idea or CoE standard to test next with your team.
+  - Capture 1 `AGENTS.md` rule or `SKILL.md` tweak that would have saved time today.
 
-Requirements:
-1. Realistic Seed Data (`data.js`): Model 2 camera assemblies (e.g., `EOS-Pro Mirrorless Body` and `Cinema-X Body`) as a 3-level hierarchical BOM tree (Assembly -> Sub-Assembly such as Optical Lens Mount, CMOS Sensor & ISP Board, IBIS Stabilization Unit, Battery & Power Delivery, Magnesium Chassis -> Individual Parts with SKU, Supplier, Lead Time in days, Stock Status [`In Stock`, `Low Stock`, `Backorder`], Unit Cost USD, and Qty per Unit).
-2. Interactive Tree & Rollup: Expand/collapse assemblies, search by SKU/part/supplier, filter by Stock Status or Sub-Assembly, and toggle Build Lot Multiplier (`1x`, `10x`, `100x`, `500x`) with live rolled-up Total BOM Cost, Longest Critical-Path Lead Time, and Backorder Risk count.
-3. Cost Breakdown & Variant Diff: Render a crisp cost-by-subsystem breakdown bar chart (pure CSS or HiDPI `<canvas>`) and a side-by-side comparison mode between the two camera models showing cost & lead-time deltas.
-4. Notes, Persistence & Export: Allow engineers to add part notes or flag alternate suppliers persisted in `localStorage` (wrapped in `try/catch` with in-memory fallback), plus one-click CSV and JSON BOM export.
-5. UI & Safety Standards: Use semantic `:root` CSS variables supporting both light and dark modes, use `textContent` / DOM element constructors (never `innerHTML` with data strings), and include a `tests/` script (`python3 -m unittest`) validating BOM cost/lead-time rollup math.
-6. Verify Before Finishing: Start the local server, open the app with `/browser`, click through expand/collapse, lot-size multipliers (`1x` -> `100x`), filters, and CSV export, and confirm `0` console errors.
-```
+### Track 11 — Interactive HTML Presentation (`reveal.js`)
+- **Difficulty:** Beginner -> Intermediate · **Teaches:** Zero-build web slides (`reveal.js`), speaker notes, `/browser` verification
+- **Links:** [App Creator Templates](https://github.com/alanblythe/antigravity-2.0-application-creator) · [Antigravity Docs](https://antigravity.google/docs)
+- **Guidance:**
+  - Scaffold a 6–8 slide HTML deck in a local folder using `reveal.js` (no npm build step; serve with `python3 -m http.server`).
+  - Cover Problem/Idea, What You Tried, Friction & Surprises, Diagram/Demo, and CoE Next Steps.
+  - Check slide navigation and `0` console errors with `/browser`.
 
-### Track 4 — Build a Custom Domain MCP Server (`FastMCP` / Python)
-- **Difficulty:** Intermediate
-- **Teaches:** `mcp` / `FastMCP` (`stdio`), `.mcp.json` registration, negative input validation, and live tool calls
+### Track 12 — Official Google Codelab
+- **Difficulty:** Beginner -> Intermediate · **Teaches:** Self-paced Antigravity, ADK, or MCP fundamentals
+- **Links:** See `references/resources.md` for all L100–L300 Codelab URLs
+- **Guidance:**
+  - **Local / Baseline Vertex AI friendly (no extra IAM):** *Getting Started with Google Antigravity*, *Building with Google Antigravity*, *Spec-Driven Development with Antigravity CLI*, *Building AI Agents with ADK*, *ADK Agentic Patterns with Memory & MCP*.
+  - **Requires extra GCP IAM (Cloud Run / BigQuery / Agent Runtime):** *Build & Deploy to GCP*, *Deploy ADK to Agent Runtime*, *Remote MCP on Cloud Run*, *MCP Toolbox for BigQuery*—confirm permissions with your GCP admin first.
+  - Open the codelab URL in your browser and follow it step-by-step, using Antigravity for Q&A if you hit setup friction.
 
-```text
-Design and build a local Model Context Protocol (MCP) server in Python (`mcp` / `FastMCP` with `stdio` transport) tailored to your business domain (e.g., Camera Warranty & Service-Center SLA Lookup, Firmware Compatibility Matrix, or Dealer Order Exception Triage).
-1. Create a realistic SQLite or JSON fixture dataset and expose 3 read-only MCP tools (e.g., `lookup_model_warranty`, `check_parts_availability`, `assess_rma_eligibility`) plus 1 read-only MCP resource (`schema://domain-rules`).
-2. Add strict input validation and a negative test proving malformed or out-of-policy inputs are rejected cleanly.
-3. Register the server in workspace `.mcp.json` (or show the exact config), write unit tests, and run an end-to-end tool call through Antigravity to prove the agent can answer business-domain questions using live tool data rather than guessing.
-```
-
----
-
-## Category C: Repo Audits, Standards Gates, Specs & Security
-
-### Track 5 — Analyze a Repo for Patterns, Consistency & Agentic Readiness (Vertical Slicing Audit)
-- **Difficulty:** Intermediate -> Advanced
-- **Teaches:** Read-only architectural analysis, context-locality scoring, and `AGENTS.md` synthesis
-
-```text
-Perform a read-only architectural and agentic-readiness audit of this repository (do not edit source files yet).
-1. Map the directory structure and assess whether the codebase follows clean vertical slices (feature-cohesive modules with clear boundaries) or tangled horizontal/monolithic layers where an agent must load dozens of files to make a single change.
-2. Identify inconsistent patterns (naming, error handling, test layout, config loading) and implicit "tribal knowledge" that currently lives only in developers' heads.
-3. Produce a prioritized `AGENT_READINESS.md` report with: (a) an Agentic Readiness Score across 5 dimensions, (b) the top 3 low-risk refactors to improve vertical slicing and context locality, and (c) a draft `<80`-line `AGENTS.md` capturing the repo's real build/test commands and invariants.
-```
-
-### Track 6 — Codify Repo Standards into a Custom `SKILL.md` + Deterministic Script Gate
-- **Difficulty:** Intermediate
-- **Teaches:** Moving deterministic checks out of prose into executable `scripts/` with non-zero exit codes
-
-```text
-Inspect our repository's PR checklists, linters, folder conventions, and recurring review feedback, then package those standards into a reusable Antigravity Skill at `.agents/skills/repo-standards-gate/`.
-1. Keep `SKILL.md` lean (<120 lines) with clear YAML frontmatter (`name`, `description` trigger) and step-by-step instructions.
-2. Move deterministic checks out of prose and into `scripts/check_standards.py` (e.g., verifying required tests exist for new modules, banning hardcoded secrets/URLs, checking docstring/typing conventions, and exiting non-zero with JSON/line-numbered diagnostics on failure).
-3. Test the skill against a deliberately broken sample change and a clean change to prove deterministic pass/fail behavior.
-```
-
-### Track 7 — Spec-Driven Build with Elephant-Goldfish Separation (`SPEC.md` -> `/clear` -> Subagents)
-- **Difficulty:** Intermediate -> Advanced
-- **Teaches:** `/grill-me` requirements discovery, clean-room `SPEC.md`, and isolated Builder/Reviewer subagents
-
-```text
-We want to practice the Elephant-Goldfish Spec-Driven Development pattern on a small feature or internal tool.
-1. Act as the stateful **Elephant**: use `/grill-me` (ask crisp multiple-choice questions) to nail down requirements, edge cases, API contracts, and acceptance tests—do NOT write implementation code yet.
-2. Write the agreed contract to `docs/specs/001-feature-spec.md`.
-3. Guide us to run `/clear` (or spawn fresh-context **Goldfish** subagents: one Builder to implement against `SPEC.md`, and one Adversarial Reviewer that only reads `SPEC.md` + git diff to verify compliance and catch gaps).
-```
-
-### Track 9 — Harden an Existing App with Lifecycle Hooks & Negative Security Tests
-- **Difficulty:** Intermediate -> Advanced
-- **Teaches:** Negative security testing (SQLi, path traversal, destructive SQL) and deterministic hook gates
-
-```text
-Take a sample API or database script in this repo (or scaffold a small Flask/FastAPI + SQLite endpoint) and harden it using deterministic harness guardrails:
-1. Write negative tests for SQL injection, unvalidated inputs, path traversal, and accidental destructive operations (`DROP TABLE` / `DELETE` without `WHERE`).
-2. Add a local verification script or pre-commit/lifecycle hook command that runs these checks automatically before any change is considered done.
-3. Demonstrate a failing bad change being blocked deterministically, followed by a clean fix passing all checks.
-```
-
----
-
-## Category D: Wrap-Up & Synthesis (Run in Final 15 Minutes)
-
-### Track 10 — Synthesis & `/learn`: Turn Today's Session into Reusable Team Learnings
-- **Difficulty:** All Levels
-- **Teaches:** Friction capture, 5-minute share-out synthesis, and `/learn`-style rule extraction
-
-```text
-Review everything we tried, broke, fixed, and discovered during our 2-hour sprint today.
-1. Summarize our top 3 **Learnings & Takeaways** (what worked well with Antigravity, where the harness or our prompts hit friction, and what surprised us) formatted for our 5-minute afternoon share-out—no demo required if we want to focus on insights.
-2. Identify 1 concrete next step or pilot idea for our organization's Engineering CoE.
-3. Run `/learn`-style extraction: propose 1 reusable `AGENTS.md` rule or `SKILL.md` improvement we should keep so the next team avoids the same friction.
-```
-
-### Track 11 — Interactive HTML Presentation with `reveal.js`
-- **Difficulty:** Beginner -> Intermediate
-- **Teaches:** Zero-build web slides (`reveal.js`), speaker notes, inline diagrams, and `/browser` visual verification
-
-```text
-Build a clean, self-contained HTML presentation in `./team-readout-deck` using **reveal.js** (zero npm build step—load via ES module/CDN or vendored local assets and serve via `python3 -m http.server 8000`).
-1. Structure 6–8 crisp slides for our afternoon **Team Learnings & Takeaways** share-out: Title, Problem/Idea, What We Tried with Antigravity, Key Friction & Surprises, Live Demo / Architecture Diagram (inline SVG or Mermaid), and Next Steps for Our CoE.
-2. Enable keyboard navigation, slide numbers, incremental bullet fragments, syntax-highlighted code blocks, and `<aside class="notes">` presenter speaker notes.
-3. Add a custom light/clean theme CSS override so text is high-contrast and scannable from across the room.
-4. Start the local server, step through all slides using `/browser`, and verify layout, navigation, and `0` console errors.
-```
-
-### Track 12 — Guided Official Google Codelab (Study Buddy Mode)
-- **Difficulty:** Beginner -> Intermediate
-- **Teaches:** Self-paced Google Cloud Antigravity, ADK, or MCP fundamentals using official codelabs (`references/resources.md`)
-
-```text
-We want to work through an official Google Developer Codelab from `references/resources.md` at our own pace, using Antigravity as a live study buddy.
-1. Based on our experience level, pick the best starting codelab (L100: Getting Started with Google Antigravity; L100/L200: Building with Google Antigravity; L200: Spec-Driven Development with Antigravity CLI `sdd-agy-cli`, Build & Deploy to GCP, Building AI Agents with ADK, or ADK Memory & MCP), share the direct URL, and flag if it requires extra GCP IAM permissions (Cloud Run, BigQuery, or Agent Runtime) beyond baseline Vertex AI access.
-2. Walk us through prerequisites and explain what each step or command is doing as we go.
-3. Help us debug any environment/auth hiccup and capture 3 concrete takeaways for our afternoon team share-out.
-```
-
-### Track 13 — Guided Workbench Demo (`antigravity-advanced-workshop-demos`)
-- **Difficulty:** Beginner -> Intermediate
-- **Teaches:** Pre-seeded local workflows (`AGENTS.md`, linked ADRs, TDD heal loops, adversarial review, and greenfield spec-to-app) with zero extra GCP IAM required
-
-```text
-Clone https://github.com/alanblythe/antigravity-advanced-workshop-demos (if not already present) and help us run one of its local-only, pre-seeded demos:
-- Easy / Context & Specs: `demo1-enterprise-surface` (AGENTS.md & rules) or `demo6-linked-design-boost` (linked ADRs & specs)
-- Testing & Verification: `demo7-contract-spec-tdd` (/grill-me -> TDD heal loop) or `demo9-adversarial-review-loop` (catch seeded bugs in a false-green suite)
-- Greenfield App: `demo10-greenfield-spec-to-app` (zero-dependency Python + SQLite + HTML/JS)
-
-1. Ask us which demo above sounds most interesting, then initialize its `workspace/` from `.seed/` (using `./start_demo.sh <demo>` on macOS/Linux/WSL, or copying `.seed/` into `workspace/` directly on Windows).
-2. Read the demo's `README.md` and `DEMO_STEPS.md`, then guide us through each step interactively—explaining what Antigravity is doing and letting us drive the prompts.
-```
+### Track 13 — Pre-Seeded Workbench Demo (`antigravity-advanced-workshop-demos`)
+- **Difficulty:** Beginner -> Intermediate · **Teaches:** Pre-seeded local workflows (`AGENTS.md`, ADRs, TDD heal loops, adversarial review, greenfield spec-to-app) with zero extra GCP IAM
+- **Links:**
+  - [antigravity-advanced-workshop-demos](https://github.com/alanblythe/antigravity-advanced-workshop-demos)
+  - [workshop-agentic-sdlc-lab](https://github.com/alanblythe/workshop-agentic-sdlc-lab) *(Account Health Scorer + ADK Coder Agent)*
+- **Guidance:**
+  - Clone `https://github.com/alanblythe/antigravity-advanced-workshop-demos` locally and open its `README.md` / `DEMO_STEPS.md`.
+  - Initialize a demo workspace with `./start_demo.sh <number>` (`1`–`9` or `201` on macOS/Linux/WSL; for `demo10-greenfield-spec-to-app` or Windows, copy `.seed/` into `workspace/`).
+  - Good starting picks: `demo1` (`AGENTS.md`), `demo6` (linked ADRs), `demo7` (`/grill-me` -> TDD), `demo9` (adversarial review), or `demo10-greenfield-spec-to-app`.
