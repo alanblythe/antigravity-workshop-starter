@@ -37,20 +37,20 @@ Help an individual attendee pick a high-signal 90–120 minute learning path and
    - Any extra GCP IAM note if a cloud-deploy codelab is included
 3. Immediately call **`ask_question`** with the 2–3 recommended tracks plus `"Show all 13 tracks"` so the attendee can pick with one click.
 
-## Step 3: Set Up the Starting Line Only (Do NOT Auto-Execute)
+## Step 3: Guide to the Resource Only (No Auto-Cloning or Execution)
 
-Once the attendee picks a track, **prepare only the starting line and hand control back to the attendee** so they drive the learning loop themselves:
+Once the attendee picks a track, **do NOT run `git clone`, create files, or execute any build/setup commands**. Provide only the links, commands, and starting guidance so the attendee runs everything themselves:
 
 - **Pre-Seeded Workbench Demos (`Track 13` / `antigravity-advanced-workshop-demos` / `workshop-agentic-sdlc-lab`):**
-  - Offer (or run if they confirm) `git clone` and initialize `workspace/` from `.seed/` (`./start_demo.sh <demo>` on macOS/Linux/WSL, or copy `.seed/` on Windows).
-  - Point them to the demo's `README.md` and `DEMO_STEPS.md`, share the Step 1 prompt they should try, and **stop**.
+  - Give them the repo URL (`https://github.com/alanblythe/antigravity-advanced-workshop-demos`) plus the exact `git clone` and seed/start commands to run themselves (`./start_demo.sh <demo>` on macOS/Linux/WSL, or copying `.seed/` into `workspace/` on Windows).
+  - Point them to the demo's `README.md` and `DEMO_STEPS.md`, and **stop**.
 - **Official Google Codelabs (`Track 12`):**
   - Share the direct `https://codelabs.developers.google.com/...` URL from `references/resources.md` and flag whether it runs locally (Vertex AI only) or requires extra GCP IAM (Cloud Run, BigQuery, Agent Runtime).
-  - Offer to stay open as a Q&A buddy while **they** work through the steps, and **stop**.
+  - Offer to stay open for Q&A while **they** work through the steps, and **stop**.
 - **Official Google Skills (`Track 2`):**
-  - Share https://github.com/google/skills and https://github.com/google-gemini/gemini-skills, summarize a few relevant skills, and let **them** pick which one to install and test.
+  - Share https://github.com/google/skills and https://github.com/google-gemini/gemini-skills, summarize 2–3 relevant skills, and let **them** pick, clone, install, and test one.
 - **Starter Prompts (`Tracks 1, 3–9, 11`):**
-  - Provide the tailored starter prompt / checklist from `references/tracks.md` plus relevant links from `references/resources.md`, and **stop**—**never** auto-scaffold or auto-build the full app, server, or presentation unless the attendee explicitly asks you to start.
+  - Provide the tailored starter prompt / checklist from `references/tracks.md` plus relevant links from `references/resources.md`, and **stop**—never auto-scaffold or auto-execute on their behalf.
 
 ## Step 4: Wrap-Up Reminder
 
