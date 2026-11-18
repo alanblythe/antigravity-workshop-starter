@@ -26,7 +26,7 @@ Ask the user these 4 short multiple-choice questions in a single concise message
    - B) **Build MCP** — connect an agent to local domain data/tools via MCP
    - C) **Audit Repo** — analyze an existing codebase for patterns, vertical slicing, or security
    - D) **Codify Skill** — package team standards, `AGENTS.md` rules, or deterministic gates
-   - E) **Explore & Learn** — guided ideation, official skills, or open experimentation
+   - E) **Explore & Learn** — guided ideation, official skills, or pre-seeded workbench demos (`antigravity-advanced-workshop-demos`)
    - F) **Guided Codelab** — follow an official step-by-step Google Developer Codelab with Antigravity as your study buddy
 4. **Team size & split:**
    - A) Solo or pair (1–2 people, single thread)

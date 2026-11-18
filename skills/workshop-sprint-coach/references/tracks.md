@@ -18,6 +18,7 @@ Ten scoped 2-hour sprint tracks organized by difficulty and category. Use the se
 | **Track 10** | Synthesis & `/learn` Share-Out Prep | All Levels | Wrap-Up (Last 15m) | Turning sprint friction into reusable team rules |
 | **Track 11** | Interactive HTML Deck (`reveal.js`) | Beginner -> Intermediate | Build App / Share-Out | Building a live browser-based team readout deck |
 | **Track 12** | Guided Official Google Codelab | Beginner -> Intermediate | Guided Codelab | Step-by-step official Codelab with Antigravity coaching |
+| **Track 13** | Guided Workbench Demo (`antigravity-advanced-workshop-demos`) | Beginner -> Intermediate | Explore & Learn / Build App | Pre-seeded local demos (`demo1`, `demo6`, `demo7`, `demo9`, `demo10`) |
 
 ---
 
@@ -171,4 +172,18 @@ We want to work through an official Google Developer Codelab from `references/re
 1. Based on our experience level, pick the best starting codelab (L100: Getting Started with Google Antigravity; L100/L200: Building with Google Antigravity; L200: Spec-Driven Development with Antigravity CLI `sdd-agy-cli`, Build & Deploy to GCP, Building AI Agents with ADK, or ADK Memory & MCP), share the direct URL, and flag if it requires extra GCP IAM permissions (Cloud Run, BigQuery, or Agent Runtime) beyond baseline Vertex AI access.
 2. Walk us through prerequisites and explain what each step or command is doing as we go.
 3. Help us debug any environment/auth hiccup and capture 3 concrete takeaways for our afternoon team share-out.
+```
+
+### Track 13 — Guided Workbench Demo (`antigravity-advanced-workshop-demos`)
+- **Difficulty:** Beginner -> Intermediate
+- **Teaches:** Pre-seeded local workflows (`AGENTS.md`, linked ADRs, TDD heal loops, adversarial review, and greenfield spec-to-app) with zero extra GCP IAM required
+
+```text
+Clone https://github.com/alanblythe/antigravity-advanced-workshop-demos (if not already present) and help us run one of its local-only, pre-seeded demos:
+- Easy / Context & Specs: `demo1-enterprise-surface` (AGENTS.md & rules) or `demo6-linked-design-boost` (linked ADRs & specs)
+- Testing & Verification: `demo7-contract-spec-tdd` (/grill-me -> TDD heal loop) or `demo9-adversarial-review-loop` (catch seeded bugs in a false-green suite)
+- Greenfield App: `demo10-greenfield-spec-to-app` (zero-dependency Python + SQLite + HTML/JS)
+
+1. Ask us which demo above sounds most interesting, then initialize its `workspace/` from `.seed/` (using `./start_demo.sh <demo>` on macOS/Linux/WSL, or copying `.seed/` into `workspace/` directly on Windows).
+2. Read the demo's `README.md` and `DEMO_STEPS.md`, then guide us through each step interactively—explaining what Antigravity is doing and letting us drive the prompts.
 ```
