@@ -6,7 +6,7 @@
 
 **What this is**
 - A ready-to-clone starter repository for 2-hour Antigravity developer workshop sprints.
-- Pre-configured with a lean starter `AGENTS.md` and the `workshop-sprint-coach` skill (`.agents/skills/workshop-sprint-coach/`), which interviews your team with 4 quick multiple-choice questions and matches you to a scoped experiment, copy-paste prompt starter, or codelab.
+- Pre-configured with a lean starter `AGENTS.md` and the `workshop-sprint-coach` skill (`.agents/skills/workshop-sprint-coach/`), which runs a 3-question multiple-choice check-in and returns only direct links and brief guidance for pre-seeded demos, official Google Codelabs, official Google Skills, or sprint topics.
 
 **Why this exists**
 - Workshop teams arrive with different backgrounds—some are opening an agentic harness for the first time, while others already have production repos and want to test MCP servers, `AGENTS.md` hierarchies, or spec-driven workflows.
@@ -20,8 +20,8 @@
 **How it works**
 - `AGENTS.md`: lean `<30`-line starter rules file loaded automatically when you open the repo
 - `.agents/skills/workshop-sprint-coach/`: workspace skill symlink pointing to `skills/workshop-sprint-coach/`
-- `skills/workshop-sprint-coach/SKILL.md`: read-only setup & links guide (`ask_question` check-in -> track match -> shares repo/codelab/skill links & `git clone` command so you drive)
-- `skills/workshop-sprint-coach/references/tracks.md`: 13 scoped 2-hour sprint tracks (including official Google Codelabs and pre-seeded workbench demos) with full copy-paste prompts organized by difficulty and category
+- `skills/workshop-sprint-coach/SKILL.md`: read-only links & guidance concierge (`ask_question` check-in -> track match -> returns only direct links and brief guidance; no prompts, cloning, or execution)
+- `skills/workshop-sprint-coach/references/tracks.md`: 13 scoped 2-hour sprint tracks (including official Google Codelabs and pre-seeded workbench demos) with direct links and brief guidance organized by difficulty and category
 - `skills/workshop-sprint-coach/references/resources.md`: curated index of official Google Codelabs, official Google Skills & OSS repos, and public workshop demo repos
 
 ---
